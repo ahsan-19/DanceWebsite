@@ -1,0 +1,69 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  style
+      include ..\static\style.css
+  title DANCE WEBSITE
+header
+  ul
+    #nav-logo
+      img(src = "/static/img/logo.png" )
+    #ada.nav-item ADA
+    li
+      a.nav-item(href='') home
+    li
+      a.nav-item(href='') about
+    li
+      a.nav-item(href='') services
+    li
+      a.nav-item(href='') class info
+    li
+      a.nav-item(href='') contact us
+section#pic-section.sections
+  h1 Welcome To Ahsan&apos;s Dance Academy
+  h3 Eat Sleep Dance Repeat
+section#main-mission-section
+  h1 OUR MISSION
+  section#mission-section.sections
+    div
+    #box-1.boxes
+      div
+        img(src= "/static/img/1.png")
+      h3.boxes-heading Dance perfection
+      p.boxes-para
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+    #box-2.boxes
+      div
+        img(src="/static/img/2.png")
+      h3.boxes-heading Dance The Way You Want
+      p.boxes-para
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+    #box-3.boxes
+      div
+        img(src="/static/img/3.png")
+      h3.boxes-heading Training
+      p.boxes-para
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+section#sponser-section
+  img(src="/static/img/logo1.png")
+  img(src="/static/img/logo2.png")
+  img(src="/static/img/logo3.png")
+  img(src="/static/img/logo4.png")
+//
+  <section id="form-section" class="sections">
+  section for form class
+  </section>
+
+h1 Contact Us
+form#contact(action='/' method='post')
+  input#namee(type='text' name='namee' placeholder='enter your name:')
+  input#name(type='text' name='age' placeholder='enter your age')
+  textarea#address(name='address' cols='30' rows='10' placeholder='enter your address')
+  button Submit
+
+footer
+  | Copyright &copy; 2022 AhsanAcademy.com | All Rights Reserved
+script 
+  include ../static/index.js

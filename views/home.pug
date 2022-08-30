@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js") 
+
+block style
+    style
+      include ..\static\style.css
+
+block content
+    section#pic-section.sections
+      h1 Welcome To Ahsan&apos;s Dance Academy
+      h3 Eat Sleep Dance Repeat
+    section#main-mission-section
+      h1 OUR MISSION
+      section#mission-section.sections
+        div
+        #box-1.boxes
+          div
+            img(src= "/static/img/1.png")
+          h3.boxes-heading Dance perfection
+          p.boxes-para
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+        #box-2.boxes
+          div
+            img(src="/static/img/2.png")
+          h3.boxes-heading Dance The Way You Want
+          p.boxes-para
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+        #box-3.boxes
+          div
+            img(src="/static/img/3.png")
+          h3.boxes-heading Training
+          p.boxes-para
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita nam Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. .
+    section#sponser-section
+      img(src="/static/img/logo1.png")
+      img(src="/static/img/logo2.png")
+      img(src="/static/img/logo3.png")
+      img(src="/static/img/logo4.png")
+    //
+      <section id="form-section" class="sections">
+      section for form class
+      </section>

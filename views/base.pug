@@ -1,0 +1,27 @@
+//now we will use template inhertiance
+doctype html
+html
+  head
+    title Ahsan Dance Academy 
+    block scripts
+    block style
+  body
+    header
+      ul
+        #nav-logo
+          img(src = "/static/img/logo.png" )
+        #ada.nav-item ADA
+        li
+          a.nav-item(href='/') home
+        li
+          a.nav-item(href='') about
+        li
+          a.nav-item(href='') services
+        li
+          a.nav-item(href='') class info
+        li
+          a.nav-item(href='/contact') contact
+    block content
+    footer
+      | Copyright &copy; 2022 AhsanAcademy.com | All Rights Reserved
+    //- block footer
